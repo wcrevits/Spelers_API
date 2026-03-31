@@ -1,0 +1,25 @@
+﻿@model IEnumerable<Spelers_API.ViewModels.SpelerVM>
+
+<h2>Spelers List</h2>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Naam</th>
+            <th>Leeftijd</th>
+            <th>Positie</th>
+            <th>Team</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var speler in Model)
+        {
+            <tr>
+                <td>@speler.Naam</td>
+                <td>@speler.Leeftijd</td>
+                <td>@speler.PositieNaam</td>
+                <td>@speler.TeamNaam</td>
+            </tr>
+        }
+    </tbody>
+</table>

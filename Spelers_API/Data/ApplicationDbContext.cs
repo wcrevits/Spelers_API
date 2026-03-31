@@ -3,9 +3,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Spelers_API.Data
 {
-    public class ApplicationDbContext : IdentityDbContext
+    public class OtherContext : IdentityDbContext
     {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+        public OtherContext(DbContextOptions<OtherContext> options)
             : base(options)
         {
         }

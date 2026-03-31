@@ -9,7 +9,7 @@ using Spelers_API.Data;
 
 namespace Spelers_API.Data.Migrations
 {
-    [DbContext(typeof(ApplicationDbContext))]
+    [DbContext(typeof(OtherContext))]
     [Migration("00000000000000_CreateIdentitySchema")]
     partial class CreateIdentitySchema
     {

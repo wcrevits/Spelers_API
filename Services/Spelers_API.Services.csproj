@@ -6,4 +6,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.11" />
+	  <ProjectReference Include="..\Spelers_API.Domain\Spelers_API.Domain.csproj" />
+	  <ProjectReference Include="..\SpelersAPI.Repositories\SpelersAPI.Repositories.csproj" />
+  </ItemGroup>
+
 </Project>

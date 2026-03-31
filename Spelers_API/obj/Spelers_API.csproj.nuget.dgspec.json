@@ -4,14 +4,175 @@
     "F:\\Personal Documents\\School\\2025-2026\\Full stack dev\\SEM2\\Spelers_API\\Spelers_API\\Spelers_API.csproj": {}
   },
   "projects": {
-    "F:\\Personal Documents\\School\\2025-2026\\Full stack dev\\SEM2\\Spelers_API\\Spelers_API\\Spelers_API.csproj": {
+    "F:\\Personal Documents\\School\\2025-2026\\Full stack dev\\SEM2\\Spelers_API\\Services\\Spelers_API.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Personal Documents\\School\\2025-2026\\Full stack dev\\SEM2\\Spelers_API\\Spelers_API\\Spelers_API.csproj",
-        "projectName": "Spelers_API",
-        "projectPath": "F:\\Personal Documents\\School\\2025-2026\\Full stack dev\\SEM2\\Spelers_API\\Spelers_API\\Spelers_API.csproj",
+        "projectUniqueName": "F:\\Personal Documents\\School\\2025-2026\\Full stack dev\\SEM2\\Spelers_API\\Services\\Spelers_API.Services.csproj",
+        "projectName": "Spelers_API.Services",
+        "projectPath": "F:\\Personal Documents\\School\\2025-2026\\Full stack dev\\SEM2\\Spelers_API\\Services\\Spelers_API.Services.csproj",
         "packagesPath": "C:\\Users\\mijnk\\.nuget\\packages\\",
-        "outputPath": "F:\\Personal Documents\\School\\2025-2026\\Full stack dev\\SEM2\\Spelers_API\\Spelers_API\\obj\\",
+        "outputPath": "F:\\Personal Documents\\School\\2025-2026\\Full stack dev\\SEM2\\Spelers_API\\Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\mijnk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "F:\\Personal Documents\\School\\2025-2026\\Full stack dev\\SEM2\\Spelers_API\\SpelersAPI.Repositories\\SpelersAPI.Repositories.csproj": {
+                "projectPath": "F:\\Personal Documents\\School\\2025-2026\\Full stack dev\\SEM2\\Spelers_API\\SpelersAPI.Repositories\\SpelersAPI.Repositories.csproj"
+              },
+              "F:\\Personal Documents\\School\\2025-2026\\Full stack dev\\SEM2\\Spelers_API\\Spelers_API.Domain\\Spelers_API.Domain.csproj": {
+                "projectPath": "F:\\Personal Documents\\School\\2025-2026\\Full stack dev\\SEM2\\Spelers_API\\Spelers_API.Domain\\Spelers_API.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.11, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\Personal Documents\\School\\2025-2026\\Full stack dev\\SEM2\\Spelers_API\\SpelersAPI.Repositories\\SpelersAPI.Repositories.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Personal Documents\\School\\2025-2026\\Full stack dev\\SEM2\\Spelers_API\\SpelersAPI.Repositories\\SpelersAPI.Repositories.csproj",
+        "projectName": "SpelersAPI.Repositories",
+        "projectPath": "F:\\Personal Documents\\School\\2025-2026\\Full stack dev\\SEM2\\Spelers_API\\SpelersAPI.Repositories\\SpelersAPI.Repositories.csproj",
+        "packagesPath": "C:\\Users\\mijnk\\.nuget\\packages\\",
+        "outputPath": "F:\\Personal Documents\\School\\2025-2026\\Full stack dev\\SEM2\\Spelers_API\\SpelersAPI.Repositories\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\mijnk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "F:\\Personal Documents\\School\\2025-2026\\Full stack dev\\SEM2\\Spelers_API\\Spelers_API.Domain\\Spelers_API.Domain.csproj": {
+                "projectPath": "F:\\Personal Documents\\School\\2025-2026\\Full stack dev\\SEM2\\Spelers_API\\Spelers_API.Domain\\Spelers_API.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.13, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\Personal Documents\\School\\2025-2026\\Full stack dev\\SEM2\\Spelers_API\\Spelers_API.Domain\\Spelers_API.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Personal Documents\\School\\2025-2026\\Full stack dev\\SEM2\\Spelers_API\\Spelers_API.Domain\\Spelers_API.Domain.csproj",
+        "projectName": "Spelers_API.Domain",
+        "projectPath": "F:\\Personal Documents\\School\\2025-2026\\Full stack dev\\SEM2\\Spelers_API\\Spelers_API.Domain\\Spelers_API.Domain.csproj",
+        "packagesPath": "C:\\Users\\mijnk\\.nuget\\packages\\",
+        "outputPath": "F:\\Personal Documents\\School\\2025-2026\\Full stack dev\\SEM2\\Spelers_API\\Spelers_API.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -51,6 +212,103 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.13, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\Personal Documents\\School\\2025-2026\\Full stack dev\\SEM2\\Spelers_API\\Spelers_API\\Spelers_API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Personal Documents\\School\\2025-2026\\Full stack dev\\SEM2\\Spelers_API\\Spelers_API\\Spelers_API.csproj",
+        "projectName": "Spelers_API",
+        "projectPath": "F:\\Personal Documents\\School\\2025-2026\\Full stack dev\\SEM2\\Spelers_API\\Spelers_API\\Spelers_API.csproj",
+        "packagesPath": "C:\\Users\\mijnk\\.nuget\\packages\\",
+        "outputPath": "F:\\Personal Documents\\School\\2025-2026\\Full stack dev\\SEM2\\Spelers_API\\Spelers_API\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\mijnk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "F:\\Personal Documents\\School\\2025-2026\\Full stack dev\\SEM2\\Spelers_API\\Services\\Spelers_API.Services.csproj": {
+                "projectPath": "F:\\Personal Documents\\School\\2025-2026\\Full stack dev\\SEM2\\Spelers_API\\Services\\Spelers_API.Services.csproj"
+              },
+              "F:\\Personal Documents\\School\\2025-2026\\Full stack dev\\SEM2\\Spelers_API\\Spelers_API.Domain\\Spelers_API.Domain.csproj": {
+                "projectPath": "F:\\Personal Documents\\School\\2025-2026\\Full stack dev\\SEM2\\Spelers_API\\Spelers_API.Domain\\Spelers_API.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.9, )"
@@ -65,11 +323,17 @@
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[9.0.9, )"
+              "version": "[9.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[9.0.13, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.9, )"
+              "version": "[9.0.13, )"
             }
           },
           "imports": [
