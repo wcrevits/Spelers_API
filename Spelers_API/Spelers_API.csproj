@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+	<PackageReference Include="Swashbuckle.AspNetCore" Version="10.1.7" />
 	<ProjectReference Include="..\Spelers_API.Domain\Spelers_API.Domain.csproj" />
 	  <ProjectReference Include="..\Services\Spelers_API.Services.csproj" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />

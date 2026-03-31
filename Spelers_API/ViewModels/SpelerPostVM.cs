@@ -15,4 +15,12 @@
         public int? PositieId { get; set; }  
         public int? TeamId { get; set; }
     }
+
+    public class SpelerUpdateVM
+    {
+        public string? Naam { get; set; }
+        public int Leeftijd { get; set; }
+        public int? PositieId { get; set; }
+        public int? TeamId { get; set; }
+    }
 }

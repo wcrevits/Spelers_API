@@ -76,5 +76,42 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "SpelerController",
+    "Method": "Put",
+    "RelativePath": "api/Speler/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "spelerUpdateVM",
+        "Type": "Spelers_API.ViewModels.SpelerPostVM",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SpelerController",
+    "Method": "Delete",
+    "RelativePath": "api/Speler/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]
