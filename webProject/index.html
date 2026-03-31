@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spelers Overzicht</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+    th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+    th { background-color: #f4f4f4; }
+    .error { color: red; font-weight: bold; }
+  </style>
+</head>
+<body>
+
+<h1>Spelers Lijst</h1>
+
+<div id="auth-section">
+  <input type="text" id="jwtToken" placeholder="Plak hier je JWT Token" style="width: 300px;">
+  <button onclick="fetchSpelers()">Haal Spelers Op</button>
+</div>
+
+<p id="message" class="error"></p>
+
+<table id="spelersTable" style="display:none;">
+  <thead>
+  <tr>
+    <th>Naam</th>
+    <th>Leeftijd</th>
+    <th>Positie</th>
+    <th>Team</th>
+  </tr>
+  </thead>
+  <tbody id="spelersBody">
+  </tbody>
+</table>
+
+<script>
+  async function fetchSpelers() {
+    const token = document.getElementById('jwtToken').value;
+    const messageElem = document.getElementById('message');
+    const table = document.getElementById('spelersTable');
+    const tbody = document.getElementById('spelersBody');
+
+    if (!token) {
+      messageElem.innerText = "Voer eerst een token in!";
+      return;
+    }
+
+    try {
+      // Vervang de URL door jouw lokale API URL (bijv. https://localhost:7001/api/Speler)
+      const response = await fetch('https://localhost:7198/api/Speler', {
+        method: 'GET',
+        headers: {
+          'Authorization': `Bearer ${token}`,
+          'Content-Type': 'application/json'
+        }
+      });
+
+      if (response.status === 401) {
+        throw new Error("Niet geautoriseerd: Token is ongeldig of verlopen.");
+      }
+
+      if (!response.ok) {
+        throw new Error("Er is iets fout gegaan bij het ophalen van de data.");
+      }
+
+      const spelers = await response.json();
+      // Tabel leegmaken en vullen
+      tbody.innerHTML = '';
+      spelers.forEach(speler => {
+        const row = `<tr>
+                        <td>${speler.naam}</td>
+                        <td>${speler.leeftijd}</td>
+                        <td>${speler.positieNaam}</td>
+                        <td>${speler.teamNaam}</td>
+                    </tr>`;
+        tbody.innerHTML += row;
+      });
+
+      table.style.display = 'table';
+      messageElem.innerText = '';
+
+    } catch (error) {
+      messageElem.innerText = error.message;
+      table.style.display = 'none';
+    }
+  }
+</script>
+</body>
+</html>

@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Spelers_API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d5e7ce48f38a39a870b1db4bcc2388936c8838a5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+77ba8c4a48a7db386012e5ce15ceffd5d19a8b31")]
 [assembly: System.Reflection.AssemblyProductAttribute("Spelers_API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Spelers_API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
