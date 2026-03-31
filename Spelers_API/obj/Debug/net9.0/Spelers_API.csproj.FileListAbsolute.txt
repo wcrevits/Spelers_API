@@ -337,3 +337,7 @@ F:\Personal Documents\School\2025-2026\Full stack dev\SEM2\Spelers_API\Spelers_A
 F:\Personal Documents\School\2025-2026\Full stack dev\SEM2\Spelers_API\Spelers_API\bin\Debug\net9.0\Spelers_API.Services.pdb
 F:\Personal Documents\School\2025-2026\Full stack dev\SEM2\Spelers_API\Spelers_API\bin\Debug\net9.0\SpelersAPI.Repositories.dll
 F:\Personal Documents\School\2025-2026\Full stack dev\SEM2\Spelers_API\Spelers_API\bin\Debug\net9.0\SpelersAPI.Repositories.pdb
+F:\Personal Documents\School\2025-2026\Full stack dev\SEM2\Spelers_API\Spelers_API\bin\Debug\net9.0\Microsoft.OpenApi.dll
+F:\Personal Documents\School\2025-2026\Full stack dev\SEM2\Spelers_API\Spelers_API\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+F:\Personal Documents\School\2025-2026\Full stack dev\SEM2\Spelers_API\Spelers_API\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\Personal Documents\School\2025-2026\Full stack dev\SEM2\Spelers_API\Spelers_API\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
